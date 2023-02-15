@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+:root{
+    --pink:#FF046F;
+    --violet:#C63BFA;
+}
+/* ===========================section 01============================ */
+#section-1{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgb(161, 211, 255); */
+    background: linear-gradient(rgba(215, 30, 252, 0.274), rgba(255, 34, 255, 0.236)), url('./images/bk1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.card-round{
+
+}
+
+header{
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
+    z-index: 10;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+header .logo{
+    margin-left: 15px;
+    color: var(--pink);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;    
+}
+header .fa-graduation-cap{
+    font-size: 24px;
+ }
+
+header i{
+    margin-right: 5px;
+}
+
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li {
+    display: inline-block;
+}
+
+header .navbar ul li a{
+    text-decoration: none;
+    color: var(--pink);
+    margin-right: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header .fa-bars{
+    color: var(--pink);
+    font-size: 24px;
+    margin-right:  20px;
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+header .fa-times{
+    transform: rotate(180deg);
+    color: var(--pink);
+}
+/* =================== */
+
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 10px;    
+    color: white;
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.content h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.content p {
+    font-size: 14px;
+    padding: 10px 200px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+
+.content button{
+    background-color: #FF046F;
+    border: none;
+    outline: none;
+    padding: 10px 25px ;
+    border-radius: 40px;
+    color: white;
+    box-shadow: 2px 4px 20px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.content button:hover{
+    opacity: .7;
+}
+
+/* ===========careds========== */
+.card-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 4px 15px rgba(0,0,0,0.5);
+}
+
+.cards span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards span .fas{
+    color: white;
+    font-size: 20px;
+}
+
+.cards h2{
+    font-size: 16px;
+    color: var(--pink);
+    padding: 10px 7px;
+}
+
+.cards p{
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 7px;
+}
+/* ===========================section 02============================ */
+
+#section-2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    
+   
+}
+.about{
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.about h1{
+    font-size: 26px;
+    text-align: center;
+    color: var(--pink);
+}
+.about p{
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.left-side{
+    width: 40%;
+    padding: 30px;
+}
+
+.left-side h1{
+    font-size: 26px;
+    color: var(--pink);
+    padding-bottom: 20px;
+}
+
+.left-side p{
+    font-size: 14px;
+    color: gray;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.left-side button{
+    width: 200px;
+    color: white;
+    background: var(--pink);
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.left-side button:hover{
+    opacity: 0.7;
+}
+
+.right-side{
+    padding: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.right-side img{
+    width: 350px;
+}
+
+/* ===========================section 03============================ */
+
+#section-3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.teacher-container{
+    
+    flex-wrap: wrap;
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+ 
+}
+
+
+.teacher-card{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.image img{
+    width: 100%;
+    height: 100px;
+}
+
+.teacher-card h3{
+    font-size: 20px;
+    color: var(--pink);
+    font-weight: 500;
+}
+
+.teacher-card p{
+    font-size: 14px;
+    color: gray;
+}
+.icons{
+    color: var(--pink);
+    letter-spacing: 4px;
+}
+/* ===========================section 04============================ */
+
+#section-4{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.courses{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.courses h1{
+    font-size: 26px;
+    text-align: center;
+    color: var(--pink);
+}
+.courses p{
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+}
+
+.course-container{
+    max-width: 700px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+
+   
+}
+
+.course-card{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.course-card h2{
+    color: var(--pink);
+    font-size: 24px;
+    padding-bottom: 8px;
+
+}
+
+.course-card i{
+    color: var(--pink);
+    padding-bottom: 8px;
+    font-size: 50px;
+}
+
+.course-card p{
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+    padding: 0 20px;
+}
+/* ===========================section 05============================ */
+
+#section-5{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.student-container{
+    max-width:1000px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.student-card{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    position: relative;
+}
+
+.student-card span{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+}
+
+.student-card img{
+    height: 74px;
+    width: 74px;
+    border-radius: 50px;
+}
+
+.student-card h2{
+    color: var(--pink);
+    font-size: 24px;
+}
+
+.student-card p{
+    font-size: 13px;
+    color: gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.student-card .star{
+    color: var(--violet);
+}
+
+/* ===========================section 06============================ */
+
+#section-6{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgba(252, 69, 252, 0.555); */
+    background: linear-gradient(rgba(215, 30, 252, 0.674), rgba(255, 34, 255, 0.636)), url('./images/bk1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.contact h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    padding-top: 55px;
+}
+.contact p{
+    text-align: center;
+    font-size: 16px;
+    color: var(--pink);
+}
+.contact-left{
+    width: 40%;
+    padding: 30px;
+    /* background-color: #C63BFA; */
+}
+
+.contact-left img{
+    /* size: 100%; */
+    width: 450px;
+}
+
+.contact-right{
+    width: 60%;
+    /* background-color: antiquewhite; */
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.contact-right input{
+    width: 100%;
+    margin: 8px;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    padding: 10px;
+
+}
+
+.contact-right button{
+    width: 200px;
+    color: white;
+    background: var(--pink);
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; 
+    margin-top: 30px;
+}
+
+.contact-right button:hover{
+    opacity: 0.7;
+}
+
+.contact-right .message{
+    height: 200px;
+}
+
+
+/* =================================================foooter================================================= */
+#footer{
+    min-height: 15vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.footer-container{
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    padding: 10px;
+    letter-spacing: 30px;
+}
+
+.footer-container i{
+    font-size: 40px;
+}
+#footer p{
+    color: gray;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    
+}
+
+
+
+
+
+/* ================================================================= */
+/* ==============================Media Query======================== */
+/* ================================================================= */
+
+@media (max-width:750px){
+   
+    header .navbar{
+        position: absolute;
+        left: 0;
+        top: -362px;
+        background-color: white;
+        width: 100%;
+       border-radius: 10px;
+       opacity: 0;
+       transition: .9s ;
+       z-index: -1;
+    }
+
+    header .navbar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+    header .navbar ul li {
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    header .navbar ul li:hover{
+        background-color: var(--pink);
+        
+    }
+    header .navbar ul li a:hover{
+        color: white;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .nav-toggle{
+        top: 62px;
+        opacity: 1;
+    }
+    
+    .content p {
+        padding: 10px 50px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        position: relative;
+     
+    }
+
+    /* .card-container::before{
+        display: none;
+    } */
+
+    .about-container{
+     flex-direction: column;   
+    }
+
+    .left-side{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .right-side {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .teacher-container{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-left{
+        width: 100%;
+    }
+
+    .contact-right{
+        width: 100%;
+    }
+
+    .contact-left img{
+        width: 400px;
+        padding: 0;
+        margin: 0;
+    }
+}
